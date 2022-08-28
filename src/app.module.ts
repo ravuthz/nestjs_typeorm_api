@@ -1,3 +1,4 @@
+import { NoteModule } from './note/note.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
@@ -19,6 +20,7 @@ import * as Joi from 'joi';
       }),
     }),
     DatabaseModule,
+    NoteModule,
   ],
   controllers: [AppController],
   providers: [AppService],
